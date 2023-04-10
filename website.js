@@ -7,8 +7,8 @@ $(document).ready(function () {
     const particles = document.getElementById('particles-js');
   
     if (window.location.pathname === "/index.html") {
-      function toggleMenu() {
         const burger = document.getElementById('burgHome');
+      function toggleMenu() {
         burger.addEventListener('click', () => {
           nav.classList.toggle('active');
           burger.classList.toggle('active');
