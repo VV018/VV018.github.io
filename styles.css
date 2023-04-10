@@ -11,6 +11,12 @@ body {
   transform: translate(-50%, -50%);
 }
 
+@media (max-width: 500px) {
+  #contInd.container {
+    width: 350px;
+  }
+}
+
 h1 {
   font-size: 4rem;
   font-weight: bold;
@@ -244,7 +250,6 @@ footer {
   text-decoration: none;
   letter-spacing: 1px;
   font-size: 1rem;
-  margin-right: 30px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-in-out;
   margin-top: 2%;
@@ -282,6 +287,12 @@ a {
 
 #contz {
   height: 1550px;
+}
+
+@media (max-width: 500px) {
+  #contz {
+    height: 2900px;
+  }
 }
 
 #summary {
@@ -399,7 +410,13 @@ a {
 }
 
 #theCont {
-  height: 1400px;
+  height: 1300px;
+}
+
+@media (max-width: 500px) {
+  #theCont {
+    height: 3600px;
+  }
 }
 
 .photo-container {
@@ -460,11 +477,10 @@ a {
   justify-content: center;
   align-items: center;
   height: 100%;
-  border-radius: 8px;
 }
 
 .modal-content img {
-  max-width: 100%;
+  max-width: 90%;
   max-height: 80%;
   border-radius: 8px;
 }
@@ -476,6 +492,10 @@ a {
   text-align: center;
   color: #fff;
   margin-top: 1%;
+}
+
+.modal-open {
+  overflow: hidden;
 }
 
 .close {
@@ -576,6 +596,12 @@ a {
 #conts {
   height: 1400px;
   width: auto;
+}
+
+@media (max-width: 500px) {
+  #conts {
+   height: 2200px;
+  }
 }
 
 .card {
