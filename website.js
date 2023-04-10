@@ -6,8 +6,7 @@ $(document).ready(function () {
     const indCont = document.getElementById('contInd');
     const particles = document.getElementById('particles-js');
   
-    if (window.location.pathname === "/index.html") {
-      function toggleMenu() {
+    function toggleMenu() {
         const burger = document.getElementById('burgHome');
         burger.addEventListener('click', () => {
           nav.classList.toggle('active');
@@ -18,6 +17,8 @@ $(document).ready(function () {
           particles.classList.toggle('blur');
         });
       }
+    
+    if (window.location.pathname === "/index.html") {
       toggleMenu();
     }
   
