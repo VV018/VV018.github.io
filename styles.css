@@ -566,7 +566,7 @@ a {
   margin-bottom: 10% !important;
   color: #fff;
   margin-top: 10% !important;
-  height: 200px;
+  height: 250px;
 }
 
 .card:hover {
@@ -574,7 +574,7 @@ a {
 }
 
 #conts {
-  height: auto;
+  height: 1400px;
   width: auto;
 }
 
