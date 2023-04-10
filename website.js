@@ -7,21 +7,19 @@ $(document).ready(function () {
     const particles = document.getElementById('particles-js');
   
     if (window.location.pathname === "/index.html") {
-        const burger = document.getElementById('burgHome');
       function toggleMenu() {
-        burger.addEventListener('click', () => {
-          nav.classList.toggle('active');
-          burger.classList.toggle('active');
-          indCont.classList.toggle('blur');
-          foot.classList.toggle('blur');
-          navL.classList.toggle('active');
-          particles.classList.toggle('blur');
-        });
+          const burger = document.getElementById('burgHome');
+           $(burger).on('click touchstart', function() {
+        console.log('clicked');
+        nav.classList.toggle('active');
+        burger.classList.toggle('active');
+        indCont.classList.toggle('blur');
+        foot.classList.toggle('blur');
+        navL.classList.toggle('active');
+        particles.classList.toggle('blur');
+      });
       }
       toggleMenu();
-      burger.addEventListener('touchstart', function() {
-        toggleMenu();
-      });
     }
   
     if (window.location.pathname === "/resume.html") {
