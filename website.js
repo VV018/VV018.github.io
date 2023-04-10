@@ -19,6 +19,9 @@ $(document).ready(function () {
         });
       }
       toggleMenu();
+      burger.addEventListener('touchstart', function() {
+        toggleMenu();
+      });
     }
   
     if (window.location.pathname === "/resume.html") {
