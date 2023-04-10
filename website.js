@@ -9,7 +9,8 @@ $(document).ready(function () {
   if (window.location.pathname === "/index.html") {
     function toggleMenu() {
       const burger = document.getElementById('burgHome');
-      burger.addEventListener('click', () => {
+      burger.addEventListener('touchstart', (e) => {
+        e.preventDefault(); // prevent default touch behavior
         nav.classList.toggle('active');
         burger.classList.toggle('active');
         indCont.classList.toggle('blur');
@@ -24,7 +25,8 @@ $(document).ready(function () {
   if (window.location.pathname === "/resume.html") {
     function toggleResumeMenu() {
       const burgResume = document.getElementById('burgRes');
-      burgResume.addEventListener('click', () => {
+      burgResume.addEventListener('touchstart', (e) => {
+        e.preventDefault(); // prevent default touch behavior
         containers.classList.toggle('blur');
         nav.classList.toggle('active');
         navL.classList.toggle('active');
@@ -40,7 +42,8 @@ $(document).ready(function () {
     function togglePhotoMenu() {
       const burgPhoto = document.getElementById('burgPhoto');
       const theContainer = document.getElementById('theCont');
-      burgPhoto.addEventListener('click', () => {
+      burgPhoto.addEventListener('touchstart', (e) => {
+        e.preventDefault(); // prevent default touch behavior
         theContainer.classList.toggle('blur');
         nav.classList.toggle('active');
         navL.classList.toggle('active');
@@ -56,7 +59,8 @@ $(document).ready(function () {
     function toggleAboutMenu() {
       const burgAbout = document.getElementById('burgAbout');
       const theContainers = document.getElementById('about-all');
-      burgAbout.addEventListener('click', () => {
+      burgAbout.addEventListener('touchstart', (e) => {
+        e.preventDefault(); // prevent default touch behavior
         theContainers.classList.toggle('blur');
         nav.classList.toggle('active');
         navL.classList.toggle('active');
@@ -73,7 +77,8 @@ $(document).ready(function () {
     function toggleProjectMenu() {
       const burgProject = document.getElementById('burgProject');
       const theConts = document.getElementById('conts');
-      burgProject.addEventListener('click', () => {
+      burgProject.addEventListener('touchstart', (e) => {
+        e.preventDefault(); // prevent default touch behavior
         theConts.classList.toggle('blur');
         nav.classList.toggle('active');
         navL.classList.toggle('active');
