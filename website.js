@@ -6,7 +6,7 @@ $(document).ready(function () {
     const indCont = document.getElementById('contInd');
     const particles = document.getElementById('particles-js');
   
-    if (window.location.pathname === "/index.html") {
+    if (window.location.pathname === "/index.html" || window.location.pathname === "") {
       function toggleMenu() {
         const burger = document.getElementById('burgHome');
         burger.addEventListener('click', () => {
