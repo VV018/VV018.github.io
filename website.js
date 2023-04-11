@@ -5,7 +5,7 @@ $(document).ready(function () {
     const containers = document.getElementById('contz');
     const indCont = document.getElementById('contInd');
     const particles = document.getElementById('particles-js');
-  
+    console.log("Pathname:" + window.location.pathname);
     if (window.location.pathname === "/index.html" || window.location.pathname === "") {
       function toggleMenu() {
         const burger = document.getElementById('burgHome');
@@ -23,6 +23,7 @@ $(document).ready(function () {
   
     if (window.location.pathname === "/resume.html") {
       function toggleResumeMenu() {
+        console.log("Pathname:" + window.location.pathname);
         const burgResume = document.getElementById('burgRes');
         burgResume.addEventListener('click', () => {
           containers.classList.toggle('blur');
@@ -38,6 +39,7 @@ $(document).ready(function () {
   
     if (window.location.pathname === "/photography.html") {
       function togglePhotoMenu() {
+        console.log("Pathname:" + window.location.pathname);
         const burgPhoto = document.getElementById('burgPhoto');
         const theContainer = document.getElementById('theCont');
         burgPhoto.addEventListener('click', () => {
@@ -54,6 +56,7 @@ $(document).ready(function () {
   
     if (window.location.pathname === "/about-me.html") {
       function toggleAboutMenu() {
+        console.log("Pathname:" + window.location.pathname);
         const burgAbout = document.getElementById('burgAbout');
         const theContainers = document.getElementById('about-all');
         burgAbout.addEventListener('click', () => {
@@ -71,6 +74,7 @@ $(document).ready(function () {
   
     if (window.location.pathname === "/projects.html") {
       function toggleProjectMenu() {
+        console.log("Pathname:" + window.location.pathname);
         const burgProject = document.getElementById('burgProject');
         const theConts = document.getElementById('conts');
         burgProject.addEventListener('click', () => {
