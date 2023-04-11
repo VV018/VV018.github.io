@@ -16,6 +16,14 @@ $(document).ready(function () {
           navL.classList.toggle('active');
           particles.classList.toggle('blur');
         });
+        $('burgHome').on('touchstart', function() {
+          nav.classList.toggle('active');
+          burger.classList.toggle('active');
+          indCont.classList.toggle('blur');
+          foot.classList.toggle('blur');
+          navL.classList.toggle('active');
+          particles.classList.toggle('blur');
+        });
       }
     
     if (window.location.pathname === "/index.html") {
