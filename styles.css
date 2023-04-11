@@ -167,7 +167,7 @@ a:hover {
   .burger {
     display: block;
     cursor: pointer;
-    z-index: 2;
+    z-index: 999;
     /* Ensure burger icon appears above other elements */
   }
 
