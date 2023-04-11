@@ -6,7 +6,8 @@ $(document).ready(function () {
     const indCont = document.getElementById('contInd');
     const particles = document.getElementById('particles-js');
   
-    function toggleMenu() {
+    if (window.location.pathname === "/index.html") {
+      function toggleMenu() {
         const burger = document.getElementById('burgHome');
         burger.addEventListener('click', () => {
           nav.classList.toggle('active');
@@ -16,17 +17,7 @@ $(document).ready(function () {
           navL.classList.toggle('active');
           particles.classList.toggle('blur');
         });
-        $('burgHome').on('touchstart', function() {
-          nav.classList.toggle('active');
-          burger.classList.toggle('active');
-          indCont.classList.toggle('blur');
-          foot.classList.toggle('blur');
-          navL.classList.toggle('active');
-          particles.classList.toggle('blur');
-        });
       }
-    
-    if (window.location.pathname === "/index.html") {
       toggleMenu();
     }
   
